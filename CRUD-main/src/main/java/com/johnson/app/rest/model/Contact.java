@@ -20,6 +20,7 @@ public class Contact {
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    private LocalDateTime deletedAt;
 
     public Long getId() {
         return id;
@@ -77,6 +78,14 @@ public class Contact {
         this.updatedAt = updatedAt;
     }
 
+    public LocalDateTime getDeletedAt() {
+        return deletedAt;
+    }
+
+    public void setDeletedAt(LocalDateTime deletedAt) {
+        this.deletedAt = deletedAt;
+    }
+
     @Override
     public String toString() {
         return "Contact{" +
@@ -87,6 +96,7 @@ public class Contact {
                 ", linkPrecedence='" + linkPrecedence + '\'' +
                 ", createdAt=" + createdAt +
                 ", updatedAt=" + updatedAt +
+                ", deletedAt=" + deletedAt +
                 '}';
     }
 }

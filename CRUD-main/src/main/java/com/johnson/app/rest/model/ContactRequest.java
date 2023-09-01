@@ -1,11 +1,11 @@
 package com.johnson.app.rest.model;
 import javax.persistence.*;
 
-@Entity
+
 public class ContactRequest {
-    @Column
+
     private String email;
-    @Column
+
     private String phoneNumber;
 
     public String getEmail() {
